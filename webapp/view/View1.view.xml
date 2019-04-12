@@ -4,7 +4,26 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content></content>
+					<content>
+						<Table id="table" items="{messages>/data}">
+							<columns>
+								<Column id="userColumn">
+									<Text text="User"/>
+								</Column>
+								<Column id="messageColumn" hAlign="Center">
+									<Text text="Message"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<ObjectHeader title="{messages>username}"/>
+										<Text text="{messages>text}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
 				</Page>
 			</pages>
 		</App>
