@@ -17,7 +17,7 @@
 							<items>
 								<ColumnListItem>
 									<cells>
-										<ObjectHeader title="{messages>username}"/>
+										<ObjectHeader title="{messages>user}"/>
 										<Text text="{messages>text}"/>
 									</cells>
 								</ColumnListItem>
