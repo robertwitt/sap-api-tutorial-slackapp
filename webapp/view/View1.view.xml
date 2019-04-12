@@ -24,7 +24,7 @@
 							<items>
 								<ColumnListItem type="Navigation" press="onPress">
 									<cells>
-										<ObjectHeader title="{messages>user}"/>
+										<ObjectHeader title="{messages>user}" intro="{messages>userDetails/real_name}"/>
 										<Text text="{messages>text}"/>
 									</cells>
 								</ColumnListItem>

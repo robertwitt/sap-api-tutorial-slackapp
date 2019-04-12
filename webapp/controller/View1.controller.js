@@ -90,6 +90,20 @@ sap.ui.define([
 						self.getView().byId("prevButton").setProperty("enabled", false);
 					}
 
+					for (var i = 0; i < results.messages.length; i++) {
+						if (results.messages[i].user !== null) {
+							$.ajax({
+								type: 'GET',
+								url: "/slack/users.info?user=" + results.messages[i].user + "&token=" + token,
+								async: false
+							}).done(function (userResults) {
+								var message = self.getView().getModel("messages").getProperty("/data");
+								message[i].userDetails = userResults.user;
+								self.getView().getModel("messages").setProperty("/data", message);
+							});
+						}
+					}
+
 					oView.setBusy(false);
 				})
 				.fail(function (err) {
