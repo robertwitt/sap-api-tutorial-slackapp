@@ -5,6 +5,13 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
+						<Toolbar class="sapUiMediumMarginTop" id="pagingToolbar">
+							<Button id="prevButton" text="Previous Page" enabled="false" press="onPrevPress"/>
+							<ToolbarSpacer/>
+							<Text text="Displaying results " textAlign="Center"/>
+							<ToolbarSpacer/>
+							<Button id="nextButton" text="Next Page" enabled="false" press="onNextPress"/>
+						</Toolbar>
 						<Table id="table" items="{messages>/data}">
 							<columns>
 								<Column id="userColumn">
