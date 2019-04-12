@@ -1,2 +1,2 @@
-# sap-api-tutorial-slackapp
-Slack App Tutorial using SAP Cloud Platform API Management
+# Slack App
+Slack App Tutorial for API Management with SAP Cloud Platform, based on developer tutorial [Build Your First Full-Stack App on SAP Cloud Platform](https://developers.sap.com/group.api-ui-1.html).
