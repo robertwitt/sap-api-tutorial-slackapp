@@ -14,7 +14,6 @@
 			"version": "1.38.11"
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -31,7 +30,6 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
@@ -76,17 +74,20 @@
 				"clearControlAggregation": false
 			},
 			"routes": [{
-				"name": "RouteView1",
-				"pattern": "RouteView1",
-				"target": ["TargetView1"]
+				"pattern": "",
+				"name": "view1",
+				"target": "view1"
+			}, {
+				"pattern": "detail/{messagePath}",
+				"name": "detail",
+				"target": "detail"
 			}],
 			"targets": {
-				"TargetView1": {
-					"viewType": "XML",
-					"transition": "slide",
-					"clearControlAggregation": false,
-					"viewId": "View1",
+				"view1": {
 					"viewName": "View1"
+				},
+				"detail": {
+					"viewName": "Detail"
 				}
 			}
 		}

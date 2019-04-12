@@ -22,7 +22,7 @@
 								</Column>
 							</columns>
 							<items>
-								<ColumnListItem>
+								<ColumnListItem type="Navigation" press="onPress">
 									<cells>
 										<ObjectHeader title="{messages>user}"/>
 										<Text text="{messages>text}"/>

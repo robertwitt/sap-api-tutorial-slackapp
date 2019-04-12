@@ -39,6 +39,14 @@ sap.ui.define([
 			this._loadChannelMessages("", oldest);
 		},
 
+		onPress: function (oEvent) {
+			var oItem = oEvent.getSource();
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("detail", {
+				messagePath: encodeURIComponent(oItem.getBindingContext("messages").getPath().substr(1))
+			});
+		},
+
 		_loadChannelMessages: function (latest, oldest) {
 			var oView = this.getView();
 			oView.setBusy(true);

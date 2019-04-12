@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="de.robertwitt.tutorial.api.slackapp.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Details" showNavButton="true" navButtonPress="onNavBack">
+		<content>
+			<ObjectHeader responsive="true" fullScreenOptimized="true" intro="Timestamp" title="Message">
+				<attributes>
+					<ObjectAttribute text="Author"/>
+					<ObjectAttribute text="Message Type"/>
+				</attributes>
+			</ObjectHeader>
+		</content>
+	</Page>
+</mvc:View>
